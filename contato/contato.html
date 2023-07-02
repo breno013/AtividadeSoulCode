@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="og:title"        content="Fale conosco">
+        <meta name="og:type"         content="news.article">
+        <meta name="og:image"        content="https://aun.webhostusp.sti.usp.br/wp-content/uploads/2017/11/jornaisfotomarcossantos008-1-678x381.jpg">
+        <meta name="og:url"          content="https://breno013.github.io/AtividadeSoulCode/contato/contato.html">
+
+        <meta name="og:description"  content="Mande uma mensagem para nós!">
+        <meta name="og:locale"       content="pt_BR">
+        <meta name="og:site_name"    content="Jornal Diário">
+
+        <meta name="og:image:type"   content="image/png">
+        <meta name="og:image:width"  content="400">
+        <meta name="og:image:height" content="300">
+        <meta name="og:image:alt"    content="https://portalimprensa.com.br/content_file_storage/2015/07/28/newspaper.jpg">
+        
+        <link rel="icon" type="image/png" href="imagens\icone.png"/>
+        
+        <title>Jornal Diário</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="..\home.html"     class="linkNavHeader">Página Inicial</a>   <span>&nbsp;&nbsp;&nbsp;</span>
+                <a href="#noticiasLocais"  class="linkNavHeader">Notícias Locais</a>  <span>&nbsp;&nbsp;&nbsp;</span>
+                <a href="#esportes"        class="linkNavHeader">Esportes</a>         <span>&nbsp;&nbsp;&nbsp;</span>
+                <a href="#politica"        class="linkNavHeader">Políticas</a>        <span>&nbsp;&nbsp;&nbsp;</span>
+                <a href="#entretenimento"  class="linkNavHeader">Entretenimento</a>   <span>&nbsp;&nbsp;&nbsp;</span>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+            <h1>Fale conosco!</h1>
+
+            <form id="faleConosco" action="#">
+                <fieldset id="informacaoPessoal">
+                    <legend>Informação Pessoal</legend>
+
+                    <label for="nomeCompleto">Nome completo:</label>
+                    <br>
+                    <input
+                        id="nomeCompleto" class="input"                        
+                        type="text"        required
+                        placeholder="Eduardo Moreira da Silva"
+                    >
+                    <br>
+
+                    <label for="email">Email</label>
+                    <br>
+                    <input
+                        id="email" class="input"
+                        type="email" required
+                        placeholder="email@dominio.com.br"
+                    >
+                    <br>
+
+                    <label for="celular">Celular</label>
+                    <br>
+                    <input
+                        id="celular" class="input"
+                        type="celular" required
+                        placeholder="(12) 12345-6789"
+                    >
+                    <br>
+                </fieldset>
+
+                <br>
+
+                <fieldset id="mensagem">
+                    <legend>Assunto:</legend>
+
+                    <select name="assunto" id="assuntoMensagem">
+                        <option value="bug">Problemas técnicos no site</option>
+                        <option value="autoral">Questões autorais</option>
+                        <option value="trabalhe">Tabalhe conosco.</option>
+                        <option value="sugestao">Sugestões de melhoria.</option>
+                        <option value="duvidas">Dúvidas</option>
+                    </select>
+                    <br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+
+                    <textarea
+                        id="mensagemText" class="texto"
+                        cols="60" rows="5" required>
+                    </textarea>
+
+                    <br>
+                </fieldset>
+
+                <br><br>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+
+                <br><br>
+            </form>
+        </main>
+        
+        <footer>
+            <br>
+            <hr>
+
+            <div id="contato">
+                <a href="..\contato\contato.html">Fale conosco.</a>
+            </div>
+
+            <br>
+
+            <div id="linkRedeSocial">
+                <a href="https://pt-br.facebook.com/" class="facebook">Facebook</a>
+                <span class="espaco">&nbsp;&nbsp;&nbsp;</span>
+                
+                <a href="https://www.instagram.com/soulcodeacademy/" class="instagram">Instagram</a>
+                <span class="espaco">&nbsp;&nbsp;&nbsp;</span>
+                
+                <a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br" class="linkedin">Linkedin</a>
+                <span class="espaco">&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            
+            <div id="copyright">
+                <p>&copy; Todos os direitos reservados. Breno.com</p>
+            </div>
+        </footer>
+    </body>
+</html>
